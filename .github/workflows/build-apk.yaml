@@ -14,10 +14,13 @@ jobs:
           distribution: temurin
           java-version: 25
       - uses: android-actions/setup-android@v4
-      - name: Install NDK r30 & Build APK
-        run: |
-          sdkmanager "ndk;30.0.13049548" "platforms;android-37.0" "build-tools;37.0.0"
-          gradle assembleDebug
+        with:
+          packages: >
+            ndk;30.0.16248370
+            platforms;android-37.0
+            build-tools;37.0.0
+      - name: Build APK
+        run: ./gradlew assembleDebug
       - uses: actions/upload-artifact@v7
         with:
           name: isqu-ai-debug-apk

@@ -1,16 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+<manifest xmlns:android="http://android.com">
 
     <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
-    <uses-feature android:name="android.hardware.vulkan.level" android:version="1" android:required="false" />
-    <uses-feature android:name="android.hardware.vulkan.version" android:version="0x00403000" android:required="false" />
+
+    <uses-feature
+        android:name="android.hardware.vulkan.level"
+        android:required="false"
+        android:version="1" />
+    <uses-feature
+        android:name="android.hardware.vulkan.version"
+        android:required="false"
+        android:version="0x00403000" />
 
     <application
         android:name=".IsquApplication"
         android:allowBackup="true"
+        android:enableOnBackInvokedCallback="true"
         android:label="ISQU AI"
         android:supportsRtl="true"
         android:theme="@style/Theme.IsquAi">
+
         <activity
             android:name=".ui.MainActivity"
             android:exported="true"
@@ -20,5 +29,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
     </application>
 </manifest>

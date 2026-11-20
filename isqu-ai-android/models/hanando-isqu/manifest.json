@@ -1,0 +1,1132 @@
+{
+ "format": "isqu-f32-v1",
+ "dtype": "float32",
+ "endianness": "little",
+ "offset_unit": "float32 elements",
+ "total_numel": 49166848,
+ "tensors": [
+  {
+   "name": "tok_emb",
+   "shape": [
+    8192,
+    512
+   ],
+   "offset": 0,
+   "numel": 4194304
+  },
+  {
+   "name": "layers.0.attn_norm",
+   "shape": [
+    512
+   ],
+   "offset": 4194304,
+   "numel": 512
+  },
+  {
+   "name": "layers.0.wq",
+   "shape": [
+    512,
+    512
+   ],
+   "offset": 4194816,
+   "numel": 262144
+  },
+  {
+   "name": "layers.0.wk",
+   "shape": [
+    512,
+    512
+   ],
+   "offset": 4456960,
+   "numel": 262144
+  },
+  {
+   "name": "layers.0.wv",
+   "shape": [
+    512,
+    512
+   ],
+   "offset": 4719104,
+   "numel": 262144
+  },
+  {
+   "name": "layers.0.wo",
+   "shape": [
+    512,
+    512
+   ],
+   "offset": 4981248,
+   "numel": 262144
+  },
+  {
+   "name": "layers.0.ffn_norm",
+   "shape": [
+    512
+   ],
+   "offset": 5243392,
+   "numel": 512
+  },
+  {
+   "name": "layers.0.w1",
+   "shape": [
+    1408,
+    512
+   ],
+   "offset": 5243904,
+   "numel": 720896
+  },
+  {
+   "name": "layers.0.w3",
+   "shape": [
+    1408,
+    512
+   ],
+   "offset": 5964800,
+   "numel": 720896
+  },
+  {
+   "name": "layers.0.w2",
+   "shape": [
+    512,
+    1408
+   ],
+   "offset": 6685696,
+   "numel": 720896
+  },
+  {
+   "name": "layers.1.attn_norm",
+   "shape": [
+    512
+   ],
+   "offset": 7406592,
+   "numel": 512
+  },
+  {
+   "name": "layers.1.wq",
+   "shape": [
+    512,
+    512
+   ],
+   "offset": 7407104,
+   "numel": 262144
+  },
+  {
+   "name": "layers.1.wk",
+   "shape": [
+    512,
+    512
+   ],
+   "offset": 7669248,
+   "numel": 262144
+  },
+  {
+   "name": "layers.1.wv",
+   "shape": [
+    512,
+    512
+   ],
+   "offset": 7931392,
+   "numel": 262144
+  },
+  {
+   "name": "layers.1.wo",
+   "shape": [
+    512,
+    512
+   ],
+   "offset": 8193536,
+   "numel": 262144
+  },
+  {
+   "name": "layers.1.ffn_norm",
+   "shape": [
+    512
+   ],
+   "offset": 8455680,
+   "numel": 512
+  },
+  {
+   "name": "layers.1.w1",
+   "shape": [
+    1408,
+    512
+   ],
+   "offset": 8456192,
+   "numel": 720896
+  },
+  {
+   "name": "layers.1.w3",
+   "shape": [
+    1408,
+    512
+   ],
+   "offset": 9177088,
+   "numel": 720896
+  },
+  {
+   "name": "layers.1.w2",
+   "shape": [
+    512,
+    1408
+   ],
+   "offset": 9897984,
+   "numel": 720896
+  },
+  {
+   "name": "layers.2.attn_norm",
+   "shape": [
+    512
+   ],
+   "offset": 10618880,
+   "numel": 512
+  },
+  {
+   "name": "layers.2.wq",
+   "shape": [
+    512,
+    512
+   ],
+   "offset": 10619392,
+   "numel": 262144
+  },
+  {
+   "name": "layers.2.wk",
+   "shape": [
+    512,
+    512
+   ],
+   "offset": 10881536,
+   "numel": 262144
+  },
+  {
+   "name": "layers.2.wv",
+   "shape": [
+    512,
+    512
+   ],
+   "offset": 11143680,
+   "numel": 262144
+  },
+  {
+   "name": "layers.2.wo",
+   "shape": [
+    512,
+    512
+   ],
+   "offset": 11405824,
+   "numel": 262144
+  },
+  {
+   "name": "layers.2.ffn_norm",
+   "shape": [
+    512
+   ],
+   "offset": 11667968,
+   "numel": 512
+  },
+  {
+   "name": "layers.2.w1",
+   "shape": [
+    1408,
+    512
+   ],
+   "offset": 11668480,
+   "numel": 720896
+  },
+  {
+   "name": "layers.2.w3",
+   "shape": [
+    1408,
+    512
+   ],
+   "offset": 12389376,
+   "numel": 720896
+  },
+  {
+   "name": "layers.2.w2",
+   "shape": [
+    512,
+    1408
+   ],
+   "offset": 13110272,
+   "numel": 720896
+  },
+  {
+   "name": "layers.3.attn_norm",
+   "shape": [
+    512
+   ],
+   "offset": 13831168,
+   "numel": 512
+  },
+  {
+   "name": "layers.3.wq",
+   "shape": [
+    512,
+    512
+   ],
+   "offset": 13831680,
+   "numel": 262144
+  },
+  {
+   "name": "layers.3.wk",
+   "shape": [
+    512,
+    512
+   ],
+   "offset": 14093824,
+   "numel": 262144
+  },
+  {
+   "name": "layers.3.wv",
+   "shape": [
+    512,
+    512
+   ],
+   "offset": 14355968,
+   "numel": 262144
+  },
+  {
+   "name": "layers.3.wo",
+   "shape": [
+    512,
+    512
+   ],
+   "offset": 14618112,
+   "numel": 262144
+  },
+  {
+   "name": "layers.3.ffn_norm",
+   "shape": [
+    512
+   ],
+   "offset": 14880256,
+   "numel": 512
+  },
+  {
+   "name": "layers.3.w1",
+   "shape": [
+    1408,
+    512
+   ],
+   "offset": 14880768,
+   "numel": 720896
+  },
+  {
+   "name": "layers.3.w3",
+   "shape": [
+    1408,
+    512
+   ],
+   "offset": 15601664,
+   "numel": 720896
+  },
+  {
+   "name": "layers.3.w2",
+   "shape": [
+    512,
+    1408
+   ],
+   "offset": 16322560,
+   "numel": 720896
+  },
+  {
+   "name": "layers.4.attn_norm",
+   "shape": [
+    512
+   ],
+   "offset": 17043456,
+   "numel": 512
+  },
+  {
+   "name": "layers.4.wq",
+   "shape": [
+    512,
+    512
+   ],
+   "offset": 17043968,
+   "numel": 262144
+  },
+  {
+   "name": "layers.4.wk",
+   "shape": [
+    512,
+    512
+   ],
+   "offset": 17306112,
+   "numel": 262144
+  },
+  {
+   "name": "layers.4.wv",
+   "shape": [
+    512,
+    512
+   ],
+   "offset": 17568256,
+   "numel": 262144
+  },
+  {
+   "name": "layers.4.wo",
+   "shape": [
+    512,
+    512
+   ],
+   "offset": 17830400,
+   "numel": 262144
+  },
+  {
+   "name": "layers.4.ffn_norm",
+   "shape": [
+    512
+   ],
+   "offset": 18092544,
+   "numel": 512
+  },
+  {
+   "name": "layers.4.w1",
+   "shape": [
+    1408,
+    512
+   ],
+   "offset": 18093056,
+   "numel": 720896
+  },
+  {
+   "name": "layers.4.w3",
+   "shape": [
+    1408,
+    512
+   ],
+   "offset": 18813952,
+   "numel": 720896
+  },
+  {
+   "name": "layers.4.w2",
+   "shape": [
+    512,
+    1408
+   ],
+   "offset": 19534848,
+   "numel": 720896
+  },
+  {
+   "name": "layers.5.attn_norm",
+   "shape": [
+    512
+   ],
+   "offset": 20255744,
+   "numel": 512
+  },
+  {
+   "name": "layers.5.wq",
+   "shape": [
+    512,
+    512
+   ],
+   "offset": 20256256,
+   "numel": 262144
+  },
+  {
+   "name": "layers.5.wk",
+   "shape": [
+    512,
+    512
+   ],
+   "offset": 20518400,
+   "numel": 262144
+  },
+  {
+   "name": "layers.5.wv",
+   "shape": [
+    512,
+    512
+   ],
+   "offset": 20780544,
+   "numel": 262144
+  },
+  {
+   "name": "layers.5.wo",
+   "shape": [
+    512,
+    512
+   ],
+   "offset": 21042688,
+   "numel": 262144
+  },
+  {
+   "name": "layers.5.ffn_norm",
+   "shape": [
+    512
+   ],
+   "offset": 21304832,
+   "numel": 512
+  },
+  {
+   "name": "layers.5.w1",
+   "shape": [
+    1408,
+    512
+   ],
+   "offset": 21305344,
+   "numel": 720896
+  },
+  {
+   "name": "layers.5.w3",
+   "shape": [
+    1408,
+    512
+   ],
+   "offset": 22026240,
+   "numel": 720896
+  },
+  {
+   "name": "layers.5.w2",
+   "shape": [
+    512,
+    1408
+   ],
+   "offset": 22747136,
+   "numel": 720896
+  },
+  {
+   "name": "layers.6.attn_norm",
+   "shape": [
+    512
+   ],
+   "offset": 23468032,
+   "numel": 512
+  },
+  {
+   "name": "layers.6.wq",
+   "shape": [
+    512,
+    512
+   ],
+   "offset": 23468544,
+   "numel": 262144
+  },
+  {
+   "name": "layers.6.wk",
+   "shape": [
+    512,
+    512
+   ],
+   "offset": 23730688,
+   "numel": 262144
+  },
+  {
+   "name": "layers.6.wv",
+   "shape": [
+    512,
+    512
+   ],
+   "offset": 23992832,
+   "numel": 262144
+  },
+  {
+   "name": "layers.6.wo",
+   "shape": [
+    512,
+    512
+   ],
+   "offset": 24254976,
+   "numel": 262144
+  },
+  {
+   "name": "layers.6.ffn_norm",
+   "shape": [
+    512
+   ],
+   "offset": 24517120,
+   "numel": 512
+  },
+  {
+   "name": "layers.6.w1",
+   "shape": [
+    1408,
+    512
+   ],
+   "offset": 24517632,
+   "numel": 720896
+  },
+  {
+   "name": "layers.6.w3",
+   "shape": [
+    1408,
+    512
+   ],
+   "offset": 25238528,
+   "numel": 720896
+  },
+  {
+   "name": "layers.6.w2",
+   "shape": [
+    512,
+    1408
+   ],
+   "offset": 25959424,
+   "numel": 720896
+  },
+  {
+   "name": "layers.7.attn_norm",
+   "shape": [
+    512
+   ],
+   "offset": 26680320,
+   "numel": 512
+  },
+  {
+   "name": "layers.7.wq",
+   "shape": [
+    512,
+    512
+   ],
+   "offset": 26680832,
+   "numel": 262144
+  },
+  {
+   "name": "layers.7.wk",
+   "shape": [
+    512,
+    512
+   ],
+   "offset": 26942976,
+   "numel": 262144
+  },
+  {
+   "name": "layers.7.wv",
+   "shape": [
+    512,
+    512
+   ],
+   "offset": 27205120,
+   "numel": 262144
+  },
+  {
+   "name": "layers.7.wo",
+   "shape": [
+    512,
+    512
+   ],
+   "offset": 27467264,
+   "numel": 262144
+  },
+  {
+   "name": "layers.7.ffn_norm",
+   "shape": [
+    512
+   ],
+   "offset": 27729408,
+   "numel": 512
+  },
+  {
+   "name": "layers.7.w1",
+   "shape": [
+    1408,
+    512
+   ],
+   "offset": 27729920,
+   "numel": 720896
+  },
+  {
+   "name": "layers.7.w3",
+   "shape": [
+    1408,
+    512
+   ],
+   "offset": 28450816,
+   "numel": 720896
+  },
+  {
+   "name": "layers.7.w2",
+   "shape": [
+    512,
+    1408
+   ],
+   "offset": 29171712,
+   "numel": 720896
+  },
+  {
+   "name": "layers.8.attn_norm",
+   "shape": [
+    512
+   ],
+   "offset": 29892608,
+   "numel": 512
+  },
+  {
+   "name": "layers.8.wq",
+   "shape": [
+    512,
+    512
+   ],
+   "offset": 29893120,
+   "numel": 262144
+  },
+  {
+   "name": "layers.8.wk",
+   "shape": [
+    512,
+    512
+   ],
+   "offset": 30155264,
+   "numel": 262144
+  },
+  {
+   "name": "layers.8.wv",
+   "shape": [
+    512,
+    512
+   ],
+   "offset": 30417408,
+   "numel": 262144
+  },
+  {
+   "name": "layers.8.wo",
+   "shape": [
+    512,
+    512
+   ],
+   "offset": 30679552,
+   "numel": 262144
+  },
+  {
+   "name": "layers.8.ffn_norm",
+   "shape": [
+    512
+   ],
+   "offset": 30941696,
+   "numel": 512
+  },
+  {
+   "name": "layers.8.w1",
+   "shape": [
+    1408,
+    512
+   ],
+   "offset": 30942208,
+   "numel": 720896
+  },
+  {
+   "name": "layers.8.w3",
+   "shape": [
+    1408,
+    512
+   ],
+   "offset": 31663104,
+   "numel": 720896
+  },
+  {
+   "name": "layers.8.w2",
+   "shape": [
+    512,
+    1408
+   ],
+   "offset": 32384000,
+   "numel": 720896
+  },
+  {
+   "name": "layers.9.attn_norm",
+   "shape": [
+    512
+   ],
+   "offset": 33104896,
+   "numel": 512
+  },
+  {
+   "name": "layers.9.wq",
+   "shape": [
+    512,
+    512
+   ],
+   "offset": 33105408,
+   "numel": 262144
+  },
+  {
+   "name": "layers.9.wk",
+   "shape": [
+    512,
+    512
+   ],
+   "offset": 33367552,
+   "numel": 262144
+  },
+  {
+   "name": "layers.9.wv",
+   "shape": [
+    512,
+    512
+   ],
+   "offset": 33629696,
+   "numel": 262144
+  },
+  {
+   "name": "layers.9.wo",
+   "shape": [
+    512,
+    512
+   ],
+   "offset": 33891840,
+   "numel": 262144
+  },
+  {
+   "name": "layers.9.ffn_norm",
+   "shape": [
+    512
+   ],
+   "offset": 34153984,
+   "numel": 512
+  },
+  {
+   "name": "layers.9.w1",
+   "shape": [
+    1408,
+    512
+   ],
+   "offset": 34154496,
+   "numel": 720896
+  },
+  {
+   "name": "layers.9.w3",
+   "shape": [
+    1408,
+    512
+   ],
+   "offset": 34875392,
+   "numel": 720896
+  },
+  {
+   "name": "layers.9.w2",
+   "shape": [
+    512,
+    1408
+   ],
+   "offset": 35596288,
+   "numel": 720896
+  },
+  {
+   "name": "layers.10.attn_norm",
+   "shape": [
+    512
+   ],
+   "offset": 36317184,
+   "numel": 512
+  },
+  {
+   "name": "layers.10.wq",
+   "shape": [
+    512,
+    512
+   ],
+   "offset": 36317696,
+   "numel": 262144
+  },
+  {
+   "name": "layers.10.wk",
+   "shape": [
+    512,
+    512
+   ],
+   "offset": 36579840,
+   "numel": 262144
+  },
+  {
+   "name": "layers.10.wv",
+   "shape": [
+    512,
+    512
+   ],
+   "offset": 36841984,
+   "numel": 262144
+  },
+  {
+   "name": "layers.10.wo",
+   "shape": [
+    512,
+    512
+   ],
+   "offset": 37104128,
+   "numel": 262144
+  },
+  {
+   "name": "layers.10.ffn_norm",
+   "shape": [
+    512
+   ],
+   "offset": 37366272,
+   "numel": 512
+  },
+  {
+   "name": "layers.10.w1",
+   "shape": [
+    1408,
+    512
+   ],
+   "offset": 37366784,
+   "numel": 720896
+  },
+  {
+   "name": "layers.10.w3",
+   "shape": [
+    1408,
+    512
+   ],
+   "offset": 38087680,
+   "numel": 720896
+  },
+  {
+   "name": "layers.10.w2",
+   "shape": [
+    512,
+    1408
+   ],
+   "offset": 38808576,
+   "numel": 720896
+  },
+  {
+   "name": "layers.11.attn_norm",
+   "shape": [
+    512
+   ],
+   "offset": 39529472,
+   "numel": 512
+  },
+  {
+   "name": "layers.11.wq",
+   "shape": [
+    512,
+    512
+   ],
+   "offset": 39529984,
+   "numel": 262144
+  },
+  {
+   "name": "layers.11.wk",
+   "shape": [
+    512,
+    512
+   ],
+   "offset": 39792128,
+   "numel": 262144
+  },
+  {
+   "name": "layers.11.wv",
+   "shape": [
+    512,
+    512
+   ],
+   "offset": 40054272,
+   "numel": 262144
+  },
+  {
+   "name": "layers.11.wo",
+   "shape": [
+    512,
+    512
+   ],
+   "offset": 40316416,
+   "numel": 262144
+  },
+  {
+   "name": "layers.11.ffn_norm",
+   "shape": [
+    512
+   ],
+   "offset": 40578560,
+   "numel": 512
+  },
+  {
+   "name": "layers.11.w1",
+   "shape": [
+    1408,
+    512
+   ],
+   "offset": 40579072,
+   "numel": 720896
+  },
+  {
+   "name": "layers.11.w3",
+   "shape": [
+    1408,
+    512
+   ],
+   "offset": 41299968,
+   "numel": 720896
+  },
+  {
+   "name": "layers.11.w2",
+   "shape": [
+    512,
+    1408
+   ],
+   "offset": 42020864,
+   "numel": 720896
+  },
+  {
+   "name": "layers.12.attn_norm",
+   "shape": [
+    512
+   ],
+   "offset": 42741760,
+   "numel": 512
+  },
+  {
+   "name": "layers.12.wq",
+   "shape": [
+    512,
+    512
+   ],
+   "offset": 42742272,
+   "numel": 262144
+  },
+  {
+   "name": "layers.12.wk",
+   "shape": [
+    512,
+    512
+   ],
+   "offset": 43004416,
+   "numel": 262144
+  },
+  {
+   "name": "layers.12.wv",
+   "shape": [
+    512,
+    512
+   ],
+   "offset": 43266560,
+   "numel": 262144
+  },
+  {
+   "name": "layers.12.wo",
+   "shape": [
+    512,
+    512
+   ],
+   "offset": 43528704,
+   "numel": 262144
+  },
+  {
+   "name": "layers.12.ffn_norm",
+   "shape": [
+    512
+   ],
+   "offset": 43790848,
+   "numel": 512
+  },
+  {
+   "name": "layers.12.w1",
+   "shape": [
+    1408,
+    512
+   ],
+   "offset": 43791360,
+   "numel": 720896
+  },
+  {
+   "name": "layers.12.w3",
+   "shape": [
+    1408,
+    512
+   ],
+   "offset": 44512256,
+   "numel": 720896
+  },
+  {
+   "name": "layers.12.w2",
+   "shape": [
+    512,
+    1408
+   ],
+   "offset": 45233152,
+   "numel": 720896
+  },
+  {
+   "name": "layers.13.attn_norm",
+   "shape": [
+    512
+   ],
+   "offset": 45954048,
+   "numel": 512
+  },
+  {
+   "name": "layers.13.wq",
+   "shape": [
+    512,
+    512
+   ],
+   "offset": 45954560,
+   "numel": 262144
+  },
+  {
+   "name": "layers.13.wk",
+   "shape": [
+    512,
+    512
+   ],
+   "offset": 46216704,
+   "numel": 262144
+  },
+  {
+   "name": "layers.13.wv",
+   "shape": [
+    512,
+    512
+   ],
+   "offset": 46478848,
+   "numel": 262144
+  },
+  {
+   "name": "layers.13.wo",
+   "shape": [
+    512,
+    512
+   ],
+   "offset": 46740992,
+   "numel": 262144
+  },
+  {
+   "name": "layers.13.ffn_norm",
+   "shape": [
+    512
+   ],
+   "offset": 47003136,
+   "numel": 512
+  },
+  {
+   "name": "layers.13.w1",
+   "shape": [
+    1408,
+    512
+   ],
+   "offset": 47003648,
+   "numel": 720896
+  },
+  {
+   "name": "layers.13.w3",
+   "shape": [
+    1408,
+    512
+   ],
+   "offset": 47724544,
+   "numel": 720896
+  },
+  {
+   "name": "layers.13.w2",
+   "shape": [
+    512,
+    1408
+   ],
+   "offset": 48445440,
+   "numel": 720896
+  },
+  {
+   "name": "final_norm",
+   "shape": [
+    512
+   ],
+   "offset": 49166336,
+   "numel": 512
+  }
+ ]
+}

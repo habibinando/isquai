@@ -6,24 +6,54 @@ plugins {
 
 android {
     namespace = "com.isqu.ai"
-    compileSdk = 35
-    ndkVersion = "30.0.13049548" // Android NDK r30 (Vulkan 1.3 headers & toolchain)
+    compileSdk = 37 // Wajib minimal 37 (sama/lebih tinggi dari targetSdk) untuk AndroidX 2026
+    ndkVersion = "30.0.16248370"
 
     defaultConfig {
         applicationId = "com.isqu.ai"
-        minSdk = 26
-        targetSdk = 35
+        minSdk = 27
+        targetSdk = 37
         versionCode = 1
         versionName = "1.0.0"
 
         ndk {
-            abiFilters += listOf("arm64-v8a", "armeabi-v7a")
+            // Hapus "armeabi-v7a" jika fokus ke AI modern/Vulkan agar ukuran APK jauh lebih kecil
+            abiFilters += listOf("arm64-v8a")
         }
 
         externalNativeBuild {
             cmake {
-                cppFlags += listOf("-std=c++20", "-O3", "-DVK_USE_PLATFORM_ANDROID_KHR")
-                arguments += listOf("-DANDROID_STL=c++_shared")
+                cppFlags += listOf(
+                    "-std=c++23",
+                    "-DVK_USE_PLATFORM_ANDROID_KHR"
+                )
+                arguments += listOf(
+                    "-DANDROID_STL=c++_shared",
+                    "-DANDROID_SUPPORT_FLEXIBLE_PAGE_SIZES=ON"
+                )
+            }
+        }
+    }
+
+    buildTypes {
+        debug {
+            externalNativeBuild {
+                cmake {
+                    cppFlags += "-O1"
+                }
+            }
+        }
+        release {
+            isMinifyEnabled = true
+            isShrinkResources = true
+            proguardFiles(
+                getDefaultProguardFile("proguard-android-optimize.txt"),
+                "proguard-rules.pro"
+            )
+            externalNativeBuild {
+                cmake {
+                    cppFlags += listOf("-O3", "-flto")
+                }
             }
         }
     }
@@ -36,39 +66,42 @@ android {
     externalNativeBuild {
         cmake {
             path = file("src/main/cpp/CMakeLists.txt")
-            version = "3.22.1"
+            version = "4.2.1"
         }
     }
 
-    aaptOptions {
+    // Pengganti aaptOptions yang sudah dihapus di AGP modern
+    androidResources {
         noCompress += listOf("tflite", "lite", "bin")
     }
 
     compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_17
-        targetCompatibility = JavaVersion.VERSION_17
+        sourceCompatibility = JavaVersion.VERSION_25
+        targetCompatibility = JavaVersion.VERSION_25
     }
+}
 
-    kotlinOptions {
-        jvmTarget = "17"
+// Pengganti kotlinOptions { jvmTarget = ... } yang deprecated di Kotlin 2.x
+kotlin {
+    compilerOptions {
+        jvmTarget.set(org.jetbrains.kotlin.gradle.dsl.JvmTarget.JVM_25)
     }
 }
 
 dependencies {
-    implementation("androidx.core:core-ktx:1.15.0")
-    implementation("androidx.activity:activity-compose:1.9.3")
-    implementation("androidx.core:core-splashscreen:1.0.1")
-    implementation(platform("androidx.compose:compose-bom:2024.11.00"))
+    implementation("androidx.core:core-ktx:1.19.1")
+    implementation("androidx.activity:activity-compose:1.13.0")
+    implementation("androidx.core:core-splashscreen:1.2.0")
+    implementation(platform("androidx.compose:compose-bom:2026.11.01"))
     implementation("androidx.compose.ui:ui")
     implementation("androidx.compose.material3:material3")
     implementation("androidx.compose.material:material-icons-extended")
 
-    // TensorFlow Lite Offline Runtime + GPU Delegate
-    implementation("org.tensorflow:tensorflow-lite:2.16.1")
-    implementation("org.tensorflow:tensorflow-lite-gpu:2.16.1")
-    implementation("org.tensorflow:tensorflow-lite-gpu-api:2.16.1")
-    implementation("org.tensorflow:tensorflow-lite-support:0.4.4")
+    // LiteRT (Pengganti resmi TensorFlow Lite di Google AI Edge)
+    implementation("com.google.ai.edge.litert:litert:2.3.0")
+    implementation("com.google.ai.edge.litert:litert-gpu:2.3.0")
+    implementation("com.google.ai.edge.litert:litert-support:2.3.0")
 
     // Coroutines untuk inferensi non-blocking & notifikasi real-time
-    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.9.0")
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.11.0")
 }
